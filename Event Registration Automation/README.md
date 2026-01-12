@@ -75,12 +75,12 @@ This setup closely mirrors how registrations are handled for college events, wor
 ---
 
 ### 📊 Registered Participants Data (Backend)
-![Google Sheet Registration Data](screenshots/google-sheet(Registration%20Data).png)
+![Google Sheet Registration Data](google-sheet(Registration%20Data).png)
 
 ---
 
 ### 📷 QR Code Scan Result
-![QR Code Scan Result](screenshots/QR%20code%20scan%20result.jpg)
+![QR Code Scan Result](QR%20code%20scan%20result.jpg)
 
 ---
 
