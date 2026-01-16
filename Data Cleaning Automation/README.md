@@ -51,21 +51,21 @@ The following cleaning steps are implemented inside the **Code (JavaScript)** no
 ### 🟡 Raw Data
 The original dataset containing mixed date formats, missing values, and inconsistent text.
 
-![Raw Data](screenshots/raw-data.png)
+![Raw Data](raw data.png)
 
 ---
 
 ### 🟢 Cleaned Data
 The output after applying the data cleaning logic using n8n and JavaScript.
 
-![Cleaned Data](screenshots/cleaned-data.png)
+![Cleaned Data](cleaned data.png)
 
 ---
 
 ### 🔵 n8n Workflow
 The automation workflow used to read, clean, and write the data.
 
-![Workflow](screenshots/workflow.png)
+![Workflow](workflow.png)
 
 ---
 
