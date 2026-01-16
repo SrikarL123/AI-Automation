@@ -51,14 +51,14 @@ The following cleaning steps are implemented inside the **Code (JavaScript)** no
 ### 🟡 Raw Data
 The original dataset containing mixed date formats, missing values, and inconsistent text.
 
-![raw data](raw%20data.png)
+![Raw Data](raw%20data.png)
 
 ---
 
 ### 🟢 Cleaned Data
 The output after applying the data cleaning logic using n8n and JavaScript.
 
-![Cleaned Data](cleaned data.png)
+![Cleaned Data](cleaned%20data.png)
 
 ---
 
