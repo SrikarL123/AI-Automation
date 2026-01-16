@@ -51,7 +51,7 @@ The following cleaning steps are implemented inside the **Code (JavaScript)** no
 ### 🟡 Raw Data
 The original dataset containing mixed date formats, missing values, and inconsistent text.
 
-![Raw Data](raw data.png)
+![raw data](raw%20data.png)
 
 ---
 
