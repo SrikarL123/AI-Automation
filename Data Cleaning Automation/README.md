@@ -115,5 +115,23 @@ Through this project, I gained hands-on experience with:
 
 ---
 
-## 📁 Repository Structure
+
+## 📌 Note
+
+This project is a **learning-focused automation prototype** and not a fully production-ready data pipeline.  
+All limitations are documented intentionally as part of the learning process.
+
+---
+
+## 🤝 Want to Try This Project?
+
+This repository documents the complete workflow, but since it involves live automation tools, it cannot be run directly from GitHub.
+
+👉 If you’d like to **see it live**, **understand the setup**, or **try a demo**, feel free to **ping me on LinkedIn** — I’d be happy to help!
+
+🔗 **LinkedIn:** https://www.linkedin.com/in/srikar-lokai/
+
+---
+
+⭐ If you found this project interesting, feel free to star the repository!
 
