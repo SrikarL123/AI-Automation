@@ -1,88 +1,119 @@
 # Data Cleaning Automation using n8n & Google Sheets
 
 This project demonstrates a **batch-based data cleaning automation** built using **n8n** and **Google Sheets**.  
-The goal is to simulate real-world spreadsheet cleaning scenarios with inconsistent formats and missing values.
+It focuses on handling **real-world spreadsheet issues** such as inconsistent formats, missing values, and unstandardized text.
+
+The goal of this project is to understand **automation workflow design** and **data preprocessing**, not to build a fully production-ready pipeline.
 
 ---
 
 ## 📌 Project Overview
 
-The workflow reads raw data from a Google Sheet, applies JavaScript-based cleaning logic in n8n, and writes the cleaned data to a separate sheet.
+The workflow reads raw data from a Google Sheet, applies JavaScript-based data cleaning logic in n8n, and writes the cleaned data to a separate Google Sheet.
 
-This project focuses on **core data preprocessing**, not advanced analytics.
+This project simulates common data issues that occur in practice rather than working with ideal or perfectly formatted data.
 
 ---
 
 ## 🔄 Workflow Architecture
 
-Google Sheets (Raw Data)  
-→ n8n (Get Rows)  
-→ JavaScript Data Cleaning  
-→ Google Sheets (Cleaned Data)
-
+Google Sheets (Raw Data)
+↓
+Google Sheets (Get Rows)
+↓
+n8n – JavaScript Data Cleaning
+↓
+Google Sheets (Cleaned Data)
 ---
 
 ## 🧹 Data Cleaning Logic Implemented
 
-- **Name normalization**
-  - Converts names to consistent casing
+The following cleaning steps are implemented inside the **Code (JavaScript)** node in n8n:
 
-- **Date formatting**
-  - Handles mixed formats (`/` and `-`)
-  - Standardizes output format
+### ✅ Name Normalization
+- Trims extra spaces
+- Converts names to consistent casing
 
-- **Sales cleanup**
-  - Replaces missing or empty values with `0`
+### ✅ Date Standardization
+- Handles mixed date formats (`/` and `-`)
+- Standardizes output format for consistency
 
-- **City normalization**
-  - Maps shorthand and inconsistent values to standard city names
+### ✅ Missing Value Handling
+- Replaces empty or missing sales values with `0`
+
+### ✅ City Normalization
+- Converts shorthand and inconsistent values into standard city names
 
 ---
 
 ## 📷 Screenshots
 
-- Raw data sheet
-- Cleaned data output
-- n8n workflow configuration
+### 🟡 Raw Data
+The original dataset containing mixed date formats, missing values, and inconsistent text.
 
-(See `/screenshots` folder)
+![Raw Data](screenshots/raw-data.png)
+
+---
+
+### 🟢 Cleaned Data
+The output after applying the data cleaning logic using n8n and JavaScript.
+
+![Cleaned Data](screenshots/cleaned-data.png)
+
+---
+
+### 🔵 n8n Workflow
+The automation workflow used to read, clean, and write the data.
+
+![Workflow](screenshots/workflow.png)
 
 ---
 
 ## ⚠️ Current Limitations
 
-- Does not yet handle:
-  - Automatic deduplication
-  - Incremental row processing
-  - Advanced validation rules
-- Workflow is batch-based and reprocesses all rows on execution
+This project intentionally focuses on **core cleaning logic**.  
+The following features are **not yet implemented**:
 
-These limitations are intentional and documented as part of the learning process.
+- Automatic deduplication
+- Incremental row processing
+- Advanced data validation rules
+- State management across executions
+
+Each workflow execution currently processes all rows in batch mode.
 
 ---
 
 ## 🔮 Planned Improvements
 
-- Add deduplication logic
-- Integrate Python-based cleaning using pandas
-- Support incremental updates
-- Prepare data for BI tools like Power BI / Tableau
+Future enhancements planned for this project include:
+
+- Adding deduplication logic
+- Incremental processing of newly added rows
+- Python-based cleaning using pandas
+- Integration with BI tools such as Power BI or Tableau
+- Improved validation and error handling
 
 ---
 
-## 🛠 Tools Used
+## 🛠 Tools & Technologies Used
 
-- n8n
-- Google Sheets
-- JavaScript
+- **n8n** – Workflow automation
+- **Google Sheets** – Data source and destination
+- **JavaScript** – Data transformation logic
 
 ---
 
-## 🎯 Learning Outcome
+## 🎯 Learning Outcomes
 
-This project helped me understand:
-- Real-world data inconsistencies
-- Automation workflow design
+Through this project, I gained hands-on experience with:
 
-- Limitations of low-code tools
-- Importance of state management in data pipelines
+- Designing batch-based automation workflows
+- Handling real-world data inconsistencies
+- Understanding Google Sheets date handling
+- Writing JavaScript transformations in n8n
+- Recognizing the importance of state and idempotency in data pipelines
+
+---
+
+## 📁 Repository Structure
+
